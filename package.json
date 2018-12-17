@@ -4,6 +4,7 @@
   "description": "A WebdriverIO plugin. Report results in junit xml format.",
   "main": "build/reporter.js",
   "scripts": {
+    "prepare": "npm run build",
     "build": "run-s clean compile",
     "clean": "rm -rf ./build ./coverage",
     "compile": "babel lib/ -d build/",
